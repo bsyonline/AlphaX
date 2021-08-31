@@ -77,15 +77,20 @@ public class StreamExample {
         map.put(1, "A");
         map.put(2, "B");
         map.put(3, "C");
-        List<Integer> collect = map.entrySet().stream().map(kv -> kv.getKey()).collect(Collectors.toList());
-        System.out.println(collect);
+        List<Integer> collect9 = map.entrySet().stream().map(kv -> kv.getKey()).collect(Collectors.toList());
+        System.out.println(collect9);
 
         /*
             list to map
          */
-        Map<Integer, Integer> collectx = collect.stream().collect(Collectors.toMap(k -> k, k -> k));
-        System.out.println(collect1);
+        Map<Integer, Integer> collect10 = collect9.stream().collect(Collectors.toMap(k -> k, k -> k));
+        System.out.println(collect10);
 
+        /*
+            to TreeSet
+         */
+        TreeSet<Integer> collect11 = collect9.stream().collect(Collectors.toCollection(TreeSet::new));
+        System.out.println(collect11);
 
     }
 
