@@ -12,7 +12,7 @@
     <artifactId>business1</artifactId>
     <properties>
         <java.version>1.8</java.version>
-        <dubbo.version>2.7.6</dubbo.version>
+        <dubbo.version>2.7.13</dubbo.version>
     </properties>
     <dependencies>
         <!-- Apache Dubbo  -->
