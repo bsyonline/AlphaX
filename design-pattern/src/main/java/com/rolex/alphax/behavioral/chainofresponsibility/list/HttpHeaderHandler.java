@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2020 bsyonline
  */
-package com.rolex.alphax.behavioral.chainofresponsibility;
+package com.rolex.alphax.behavioral.chainofresponsibility.list;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -10,10 +10,10 @@ import lombok.extern.slf4j.Slf4j;
  * @since 2020
  */
 @Slf4j
-public class HttpBodyHandler extends Handler {
+public class HttpHeaderHandler implements Handler {
 
     @Override
     public void handle() {
-        log.info("wrapper http body");
+        log.info("wrapper http header");
     }
 }

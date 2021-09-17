@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2020 bsyonline
  */
-package com.rolex.alphax.behavioral.chainofresponsibility;
+package com.rolex.alphax.behavioral.chainofresponsibility.linkedtable;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -15,5 +15,6 @@ public class HttpHeaderHandler extends Handler {
     @Override
     public void handle() {
         log.info("wrapper http header");
+        next();
     }
 }

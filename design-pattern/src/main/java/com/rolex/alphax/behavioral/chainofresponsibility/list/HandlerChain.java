@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2020 bsyonline
  */
-package com.rolex.alphax.behavioral.chainofresponsibility;
+package com.rolex.alphax.behavioral.chainofresponsibility.list;
 
 import java.util.ArrayList;
 import java.util.List;
